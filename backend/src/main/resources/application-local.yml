@@ -1,0 +1,10 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/trading_analysis_db}
+    username: ${DB_USERNAME:rathore}
+    password: ${DB_PASSWORD:rathore}
+
+logging:
+  level:
+    org.springframework.jdbc.core: DEBUG
+    com.rathore.stockanalysis: DEBUG

@@ -1,0 +1,68 @@
+import type { ExchangeCode, Timeframe } from "./common.types";
+
+export interface ChartRequestDto {
+  exchangeCode: ExchangeCode;
+  instrumentId: number;
+  timeframes: Timeframe[];
+  from?: string;
+  to?: string;
+  includeSma?: boolean;
+  includePivots?: boolean;
+  includePivotCandles?: boolean;
+}
+
+export interface LinePointDto {
+  time: string;
+  value: number;
+}
+
+export interface ChartCandleDto {
+  barStartTs: string;
+  barEndTs: string;
+  tradeDate: string;
+  tfId: number;
+  open: number;
+  high: number;
+  low: number;
+  close: number;
+  volume?: number | null;
+}
+
+export interface ChartSeriesDto {
+  timeframe: Timeframe;
+  candles: ChartCandleDto[];
+}
+
+export interface ChartOverlayDto {
+  sma?: {
+    sma5?: LinePointDto[];
+    sma10?: LinePointDto[];
+    sma20?: LinePointDto[];
+    sma50?: LinePointDto[];
+    sma100?: LinePointDto[];
+    sma200?: LinePointDto[];
+  };
+  pivots?: Array<{
+    barStartTs: string;
+    pivotType?: string | null;
+    pivotConfirmed: boolean;
+    pivotPrice?: number | null;
+    trendPivotType?: string | null;
+  }>;
+}
+
+export interface MultiTimeframeChartsDto {
+  instrumentId: number;
+  exchangeCode: ExchangeCode;
+  symbol: string;
+  series: {
+    week?: ChartSeriesDto | null;
+    day?: ChartSeriesDto | null;
+    hour?: ChartSeriesDto | null;
+  };
+  overlays?: {
+    week?: ChartOverlayDto | null;
+    day?: ChartOverlayDto | null;
+    hour?: ChartOverlayDto | null;
+  };
+}

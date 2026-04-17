@@ -1,0 +1,4 @@
+com\rathore\stockanalysis\common\sql\SqlFragmentBuilderTest.class
+com\rathore\stockanalysis\common\exchange\ExchangeSchemaRegistryTest.class
+com\rathore\stockanalysis\StockAnalysisBackendApplicationTests.class
+com\rathore\stockanalysis\authz\service\AuthorizationServiceImplTest.class

@@ -1,0 +1,17 @@
+Task,Owner,Priority,Dependency,Estimate (days)
+ExchangeSchemaRegistry,Backend,High,None,2
+Read model SQL (instrument_latest_snapshot),Backend,High,Schema ready,3
+Dashboard API,Backend,High,Read models,3
+Instrument Search API,Backend,High,Read models,3
+Chart API,Backend,High,market_candle,3
+Dashboard UI,Frontend,High,Dashboard API,3
+Instrument Table UI,Frontend,High,Instrument API,4
+Summary Panel UI,Frontend,High,Summary API,3
+Chart Workbench,Frontend,High,Chart API,5
+Screener Backend,Backend,High,Read models,5
+Screener UI,Frontend,High,Screener API,6
+FlexLayout Workspace,Frontend,Medium,Chart UI,5
+Tauri Setup,Frontend,Medium,Frontend build,3
+Backend Tests,Backend,High,All APIs,5
+Frontend Tests,Frontend,Medium,UI ready,4
+CI/CD Setup,DevOps,Medium,Tests,3

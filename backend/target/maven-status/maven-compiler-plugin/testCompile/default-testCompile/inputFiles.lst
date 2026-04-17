@@ -1,0 +1,12 @@
+c:\wrk\scanner-app\backend\src\test\java\com\rathore\stockanalysis\audit\AuditRepositoryIT.java
+c:\wrk\scanner-app\backend\src\test\java\com\rathore\stockanalysis\authz\service\AuthorizationServiceImplTest.java
+c:\wrk\scanner-app\backend\src\test\java\com\rathore\stockanalysis\chart\ChartQueryRepositoryIT.java
+c:\wrk\scanner-app\backend\src\test\java\com\rathore\stockanalysis\common\exchange\ExchangeSchemaRegistryTest.java
+c:\wrk\scanner-app\backend\src\test\java\com\rathore\stockanalysis\common\sql\SqlFragmentBuilderTest.java
+c:\wrk\scanner-app\backend\src\test\java\com\rathore\stockanalysis\dashboard\DashboardQueryRepositoryIT.java
+c:\wrk\scanner-app\backend\src\test\java\com\rathore\stockanalysis\instrument\InstrumentQueryRepositoryIT.java
+c:\wrk\scanner-app\backend\src\test\java\com\rathore\stockanalysis\preference\UserPreferenceRepositoryIT.java
+c:\wrk\scanner-app\backend\src\test\java\com\rathore\stockanalysis\screener\ScreenerQueryRepositoryIT.java
+c:\wrk\scanner-app\backend\src\test\java\com\rathore\stockanalysis\StockAnalysisBackendApplicationTests.java
+c:\wrk\scanner-app\backend\src\test\java\com\rathore\stockanalysis\support\PostgresIntegrationTestSupport.java
+c:\wrk\scanner-app\backend\src\test\java\com\rathore\stockanalysis\watchlist\WatchlistConsoleRepositoryIT.java
