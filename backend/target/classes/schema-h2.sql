@@ -48,6 +48,7 @@ CREATE TABLE market_nse.market_candle (
     bar_start_ts TIMESTAMP NOT NULL,
     bar_end_ts TIMESTAMP,
     trade_date DATE NOT NULL,
+    candle_week DATE,
     open_price DECIMAL(18,6) NOT NULL,
     high_price DECIMAL(18,6) NOT NULL,
     low_price DECIMAL(18,6) NOT NULL,
